@@ -265,6 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const acceptAllBtn = document.getElementById('cookie-accept-all');
   const acceptNecessaryBtn = document.getElementById('cookie-accept-necessary');
   const storageKey = 'tierarztpraxis_cookie_consent_v2';
+  const visibilityThreshold = Math.max(window.screen?.height || 800, 260);
 
   if (!cookieBanner) return;
 
@@ -359,9 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const updateTopButtonVisibility = () => {
-    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const threshold = Math.max(scrollableHeight * 0.5, 260);
-    const shouldShow = hasConsentDecision() && window.scrollY >= threshold;
+    const shouldShow = hasConsentDecision() && window.scrollY >= visibilityThreshold;
 
     topButton.classList.toggle('is-visible', shouldShow);
   };
