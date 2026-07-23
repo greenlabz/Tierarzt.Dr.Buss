@@ -348,6 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const acceptAllBtn = document.getElementById('cookie-accept-all');
   const acceptNecessaryBtn = document.getElementById('cookie-accept-necessary');
   const storageKey = 'tierarztpraxis_cookie_consent_v2';
+  const visibilityThreshold = Math.max(window.screen?.height || 800, 260);
 
   if (!topButton) return;
 
