@@ -1,0 +1,25 @@
+# Website Tree
+
+- `/` — Startseite und Entity-Hub
+  - `/#praxis` — Praxis
+  - `/#team` — Team
+  - `/#leistungen` — Leistungsübersicht
+  - `/#kontakt-formular` — Kontaktformular
+  - `/#termine` — Google-Terminkalender
+  - `/#kontakt` — Standort
+- `/leistungen.html` — vollständige Leistungsübersicht
+- `/notfall.html` — Notfall-Einschätzung, Dienstnummer und Kliniken
+  - `/notfall.html#was-ist-ein-notfall` — Warnzeichen
+- `/ratgeber.html` — zehn Ratgeberartikel in einer modalen Artikelsammlung
+- `/booking.html` — eigenständige Terminvorbereitung
+- `/Impressum.html` — Anbieterkennzeichnung
+- `/Datenschutz.html` — Datenschutz
+- `/Startseite.html` — Dublette, `noindex`, Canonical und Redirect-Ziel `/`
+- `/robots.txt` — Crawling
+- `/sitemap.xml` — XML-Sitemap
+- `/llms.txt` — kompakter LLM-Index
+- `/llms-full.txt` — vollständige LLM-Übersicht
+- `/ai-sitemap.md` — AI-Inhaltsrouting
+- `/entity-index.md` — Entities
+- `/content-index.md` — Inhalte und Suchintentionen
+- `/knowledge-index.md` — bestätigte Aussagen und Beziehungen

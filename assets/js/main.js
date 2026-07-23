@@ -70,13 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalContent = document.getElementById('modal-content');
   const openBtns = document.querySelectorAll('[data-open-modal="hours"]');
   const closeBtns = document.querySelectorAll('[data-close-modal]');
+  let modalTrigger = null;
 
   if (modal && modalContent) {
-    const openModal = () => {
+    const openModal = (event) => {
+      modalTrigger = event?.currentTarget || document.activeElement;
+      modal.removeAttribute('inert');
+      modal.setAttribute('aria-hidden', 'false');
       modal.classList.remove('hidden');
       setTimeout(() => {
         modalContent.classList.remove('scale-95', 'opacity-0');
         modalContent.classList.add('scale-100', 'opacity-100');
+        modal.querySelector('[data-close-modal]')?.focus();
       }, 10);
     };
 
@@ -85,6 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
       modalContent.classList.add('scale-95', 'opacity-0');
       setTimeout(() => {
         modal.classList.add('hidden');
+        modal.setAttribute('aria-hidden', 'true');
+        modal.setAttribute('inert', '');
+        modalTrigger?.focus();
       }, 300);
     };
 

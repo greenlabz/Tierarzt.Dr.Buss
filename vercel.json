@@ -1,0 +1,30 @@
+{
+  "redirects": [
+    { "source": "/Startseite.html", "destination": "/", "permanent": true },
+    { "source": "/assets/index.html", "destination": "/", "permanent": true },
+    { "source": "/assets/Startseite.html", "destination": "/", "permanent": true },
+    { "source": "/assets/leistungen.html", "destination": "/leistungen.html", "permanent": true },
+    { "source": "/assets/notfall.html", "destination": "/notfall.html", "permanent": true },
+    { "source": "/assets/ratgeber.html", "destination": "/ratgeber.html", "permanent": true },
+    { "source": "/assets/booking.html", "destination": "/booking.html", "permanent": true },
+    { "source": "/assets/Impressum.html", "destination": "/Impressum.html", "permanent": true },
+    { "source": "/assets/Datenschutz.html", "destination": "/Datenschutz.html", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }
+      ]
+    }
+  ]
+}

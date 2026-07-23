@@ -56,7 +56,8 @@
     for (let d = 1; d <= total; d++) {
       const date = new Date(curYear, curMonth, d);
       const dow = date.getDay();
-      const el = document.createElement('div');
+      const isAvailable = dow !== 0 && dow !== 6 && date >= today;
+      const el = document.createElement(isAvailable ? 'button' : 'div');
       el.textContent = d;
 
       if (dow === 0 || dow === 6) {
@@ -64,6 +65,8 @@
       } else if (date < today) {
         el.className = 'cal__day cal__day--past';
       } else {
+        el.type = 'button';
+        el.setAttribute('aria-label', `${DE_WD_FULL[dow - 1]}, ${d}. ${DE_MONTHS[curMonth]} ${curYear}`);
         el.className = 'cal__day cal__day--avail';
         if (date.getTime() === today.getTime()) el.classList.add('cal__day--today');
         if (selDate && date.getTime() === selDate.getTime()) el.classList.add('cal__day--selected');

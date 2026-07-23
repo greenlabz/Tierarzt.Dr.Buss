@@ -1,0 +1,5 @@
+.vercel
+.env*
+.lighthouse-*.json
+.playwright-cli/
+.playwright-mcp/

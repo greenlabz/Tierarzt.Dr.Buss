@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.xn--tierarztpraxis-mckmhl-wec5l.de/sitemap.xml

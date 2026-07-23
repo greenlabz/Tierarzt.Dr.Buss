@@ -1,0 +1,24 @@
+# Tierarztpraxis Dr. Buss
+
+> Tierarztpraxis für Kleintiere in Möckmühl. Diese Datei verweist auf die maßgeblichen öffentlichen Inhalte der Website. Medizinische Informationen ersetzen keine Untersuchung. Bei einem Notfall bitte die Notfallseite und die dort genannten Telefonnummern nutzen.
+
+## Zentrale Seiten
+
+- [Startseite](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/): Praxis, Team, Kontakt, Öffnungszeiten, Termin und Standort
+- [Leistungen](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/leistungen.html): Labor, Dermatologie, Ultraschall, Röntgen, Zahnheilkunde, Chirurgie und weitere Leistungen
+- [Notfall](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/notfall.html): Warnzeichen, Bereitschaftsdienst und Tierkliniken
+- [Ratgeber](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/ratgeber.html): Beiträge zu häufigen Gesundheitsfragen bei Hund und Katze
+- [Termin buchen](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/booking.html): Vorbereitung der Online-Terminbuchung
+
+## Rechtliches
+
+- [Impressum](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/Impressum.html)
+- [Datenschutz](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/Datenschutz.html)
+
+## Erweiterte Informationen
+
+- [Ausführliche LLM-Übersicht](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/llms-full.txt)
+- [AI Sitemap](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/ai-sitemap.md)
+- [Entity Index](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/entity-index.md)
+- [Content Index](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/content-index.md)
+- [Knowledge Index](https://www.xn--tierarztpraxis-mckmhl-wec5l.de/knowledge-index.md)
