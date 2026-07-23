@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Impressum | Tierarztpraxis Dr. Buss</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:wght@300;400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#93000a",
+              "surface-container": "#e7eeff",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#ffb4a8",
+              "tertiary": "#bc0000",
+              "surface-container-highest": "#d8e3fb",
+              "error-container": "#ffdad6",
+              "on-surface": "#111c2d",
+              "surface": "#f9f9ff",
+              "inverse-primary": "#66de88",
+              "inverse-surface": "#263143",
+              "on-surface-variant": "#3e4a3e",
+              "on-primary-container": "#f6fff3",
+              "surface-variant": "#d8e3fb",
+              "secondary": "#545f73",
+              "primary": "#006b33",
+              "surface-container-low": "#f0f3ff",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#410000",
+              "inverse-on-surface": "#ecf1ff",
+              "error": "#ba1a1a",
+              "surface-container-high": "#dee8ff",
+              "secondary-container": "#d5e0f8",
+              "on-background": "#111c2d",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#f9f9ff",
+              "on-secondary": "#ffffff",
+              "background": "#f9f9ff",
+              "primary-fixed-dim": "#66de88",
+              "on-tertiary-fixed-variant": "#930000",
+              "on-secondary-fixed": "#111c2d",
+              "on-primary-fixed": "#00210b",
+              "tertiary-container": "#e61a0e",
+              "surface-tint": "#006d34",
+              "primary-fixed": "#82fba2",
+              "outline": "#6e7a6e",
+              "tertiary-fixed": "#ffdad4",
+              "on-primary": "#ffffff",
+              "on-secondary-container": "#586377",
+              "secondary-fixed": "#d8e3fb",
+              "outline-variant": "#bdcabb",
+              "on-tertiary-container": "#fffbff",
+              "on-secondary-fixed-variant": "#3c475a",
+              "surface-dim": "#cfdaf2",
+              "secondary-fixed-dim": "#bcc7de",
+              "primary-container": "#008742",
+              "on-primary-fixed-variant": "#005226"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Public Sans"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<!-- Styles: siehe assets/css/style.css -->
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- TopNavBar -->
+<nav class="fixed relative top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-4 py-1.5 md:px-6 md:py-3 max-w-7xl mx-auto">
+<a class="flex items-center gap-2 sm:gap-3 shrink-0 min-w-0" href="index.html">
+      <img alt="Tierarztpraxis Dr. Buss Logo" class="h-9 sm:h-10 md:h-14 w-auto bg-transparent shrink-0" src="assets/images/logos/logo-transparent-cropped.png"/>
+      <span class="text-[0.72rem] sm:text-sm md:text-xl font-black text-green-900 dark:text-green-100 font-headline tracking-tight leading-tight whitespace-nowrap">Tierarztpraxis Dr. Buss</span>
+    </a>
+<div class="hidden md:flex items-center gap-8 font-headline font-bold">
+<a class="text-slate-600 dark:text-slate-400 hover:text-green-800 transition-all duration-300" href="leistungen.html">Leistungen</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-green-800 transition-all duration-300" href="index.html#kontakt">Kontakt</a>
+<div class="hidden md:flex gap-4 items-center ml-4">
+<a href="index.html#termine" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full scale-95 active:scale-90 transition-all duration-300 hover:opacity-90 text-center text-sm">Termin anfragen</a>
+<a href="notfall.html" class="border border-tertiary text-tertiary px-6 py-2 rounded-full scale-95 active:scale-90 transition-all duration-300 hover:bg-tertiary/5 text-center text-sm">Notfall</a>
+</div>
+</div>
+<button class="md:hidden p-1.5 text-primary shrink-0" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Menü öffnen">
+<span class="material-symbols-outlined" data-menu-icon>menu</span>
+</button>
+
+</div>
+
+<div id="mobile-menu" data-mobile-menu class="mobile-menu-panel hidden md:hidden border-t border-slate-200/70 bg-white/95 backdrop-blur-xl shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-2">
+    <a class="mobile-menu-link" href="index.html">Startseite</a>
+    <a class="mobile-menu-link" href="leistungen.html">Leistungen</a>
+    <a class="mobile-menu-link" href="index.html#kontakt-formular">Kontakt</a>
+    <a class="mobile-menu-link mobile-menu-link--alert" href="notfall.html">Notfall</a>
+    <a class="mobile-menu-link mobile-menu-link--primary" href="index.html#termine">Termin anfragen</a>
+  </div>
+</div>
+
+</nav>
+
+<main class="pt-32 pb-24 px-6">
+<div class="max-w-4xl mx-auto">
+<!-- Header Section -->
+<header class="mb-16">
+<span class="inline-block px-3 py-1 rounded-sm bg-primary-fixed text-on-primary-fixed font-label text-xs font-medium uppercase tracking-wider mb-4">Rechtliche Hinweise</span>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold text-on-surface tracking-tight leading-tight mb-6 text-on-surface">
+                    Impressum
+                </h1>
+<p class="text-xl text-secondary max-w-2xl leading-relaxed text-secondary">
+                    Gesetzliche Anbieterkennung und Pflichtangaben gemäß § 5 TMG und § 18 MStV.
+                </p>
+</header>
+<!-- Legal Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+<!-- Responsible Person & Address -->
+<div class="p-8 rounded-xl bg-surface-container-low transition-all duration-300">
+<h2 class="font-headline font-bold text-xl mb-6 flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary">person</span>
+                        Verantwortlich
+                    </h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed text-on-surface">
+<p class="font-bold text-on-surface">Dr. med. vet. Thomas Buss</p>
+<p>Ruchsener Str. 12<br/>74219 Möckmühl</p>
+<div class="pt-4 space-y-2">
+<p class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm">call</span>
+                                06298 3567
+                            </p>
+<p class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm">mail</span>
+                                info@tierarzt-moeckmuehl.de
+                            </p>
+</div>
+</div>
+</div>
+<!-- Professional Regulations -->
+<div class="p-8 rounded-xl bg-surface-container-lowest shadow-sm">
+<h2 class="font-headline font-bold text-xl mb-6 flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary">gavel</span>
+                        Berufsrechtliche Angaben
+                    </h2>
+<div class="space-y-4 text-on-surface-variant text-sm leading-relaxed text-on-surface">
+<div>
+<p class="font-bold text-on-surface uppercase text-xs tracking-widest mb-1">Gesetzliche Berufsbezeichnung</p>
+<p>Tierarzt (verliehen in der Bundesrepublik Deutschland)</p>
+</div>
+<div>
+<p class="font-bold text-on-surface uppercase text-xs tracking-widest mb-1">Zuständige Kammer</p>
+<p>Landestierärztekammer Baden-Württemberg</p>
+</div>
+<div>
+<p class="font-bold text-on-surface uppercase text-xs tracking-widest mb-1">Berufsrechtliche Regelungen</p>
+<p>Berufsordnung der Landestierärztekammer Baden-Württemberg</p>
+</div>
+<div>
+<p class="font-bold text-on-surface uppercase text-xs tracking-widest mb-1">Umsatzsteuer-Identifikationsnummer</p>
+<p>DE 262 761 140</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Disclaimer Section -->
+<section class="space-y-12">
+<div class="border-l-4 border-primary-container pl-8 py-2">
+<h3 class="font-headline font-bold text-2xl mb-4 text-on-surface">Haftung für Inhalte</h3>
+<p class="text-secondary leading-relaxed mb-4 text-secondary text-on-surface">
+                        Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+                    </p>
+<p class="text-secondary leading-relaxed text-secondary text-on-surface">
+                        Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                    </p>
+</div>
+<div class="border-l-4 border-outline-variant pl-8 py-2">
+<h3 class="font-headline font-bold text-2xl mb-4 text-on-surface">Haftung für Links</h3>
+<p class="text-secondary leading-relaxed text-secondary text-on-surface">
+                        Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+                    </p>
+</div>
+<div class="border-l-4 border-primary-fixed pl-8 py-2">
+<h3 class="font-headline font-bold text-2xl mb-4 text-on-surface">Urheberrecht</h3>
+<p class="text-secondary leading-relaxed text-secondary text-on-surface">
+                        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+                    </p>
+</div>
+</section>
+<!-- Map Anchor -->
+<section class="mt-24 rounded-2xl overflow-hidden bg-surface-container-highest aspect-[21/9] relative group">
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700" data-alt="abstract stylized map view of a small town with green spaces and clean architectural lines in a medical blue and green palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXDrYEWX7X8WR-4-To74-qs7-VinD5QVglpEx3B4XV6oTOLCyXQORiKHq1MIgGt-LKmDlJ89ilS230azhOTxS4-fH1W94_S9z8UVEt1zqvu-5X9GGnRD6mxvH-2ZId69d3IrOyxoYcmXRgGPxbykujHrdFRpd8E6UO07XevVoLW6LE33wjMO_BEdqeFSfl8FVxJMC7ZhAMOXBEf5DrYaE9nJu9D-EjGlkFx3x5XIQWi-PNHt1dZAsnpYnvCcWQUO4wFe1W0OYEPiA"/>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="bg-white/90 backdrop-blur px-8 py-6 rounded-xl shadow-xl text-center">
+<span class="material-symbols-outlined text-tertiary block mb-2 text-3xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<p class="font-headline font-bold text-on-surface">Finden Sie uns in Möckmühl</p>
+<p class="text-xs text-secondary mt-1">Ruchsener Str. 12</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="site-footer__inner max-w-7xl mx-auto px-6 sm:px-8 py-12">
+<div class="site-footer__grid">
+<div class="site-footer__card site-footer__brand">
+    <img alt="Tierarztpraxis Dr. Buss Logo" class="site-footer__logo" src="assets/images/logos/logo-transparent-cropped.png"/>
+    <div class="site-footer__brand-title">Tierarztpraxis Dr. Buss</div>
+    <p class="site-footer__brand-copy">
+        Ihre Praxis für Kleintiere im Herzen von Möckmühl. Freundlich, persönlich und mit Zeit für Sie und Ihr Tier.
+    </p>
+</div>
+<div class="site-footer__card">
+<h4 class="site-footer__headline">Kontakt &amp; Standort</h4>
+<ul class="site-footer__list">
+<li>Ruchsener Str. 12</li>
+<li>74219 Möckmühl</li>
+<li><a class="site-footer__link site-footer__link--strong" href="tel:+4962983567">Tel: 06298 3567</a></li>
+<li><a class="site-footer__link" href="mailto:info@tierarztpraxis-moeckmuehl.de">E-Mail: info@tierarztpraxis-moeckmuehl.de</a></li>
+<li><a class="site-footer__link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Ruchsener+Str.+12%2C+74219+M%C3%B6ckm%C3%BChl" target="_blank">Route in Google Maps</a></li>
+</ul>
+</div>
+<div class="site-footer__card">
+<h4 class="site-footer__headline">Öffnungszeiten</h4>
+<ul class="site-footer__hours">
+<li><span>Montag</span><span>10:30 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Dienstag</span><span>10:30 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Mittwoch</span><span>10:30 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Donnerstag</span><span>11:00 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Freitag</span><span>11:00 – 12:00 · 16:30 – 18:30</span></li>
+</ul>
+<p class="site-footer__note">Termine nur nach Vereinbarung.</p>
+</div>
+<div class="site-footer__card">
+<h4 class="site-footer__headline">Schnellzugriff</h4>
+<ul class="site-footer__list">
+<li><a class="site-footer__link" href="index.html#termine">Termin vereinbaren</a></li>
+<li><a class="site-footer__link" href="index.html#kontakt-formular">Kontaktformular</a></li>
+<li><a class="site-footer__link" href="notfall.html">Notdienst</a></li>
+<li><a class="site-footer__link" href="leistungen.html">Leistungen</a></li>
+<li><a class="site-footer__link" href="ratgeber.html">Ratgeber</a></li>
+<li><a class="site-footer__link" href="Impressum.html">Impressum</a></li>
+<li><a class="site-footer__link" href="Datenschutz.html">Datenschutz</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="site-footer__bottom">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 py-6 text-center">
+<p class="site-footer__copyright">© 2026 Tierarztpraxis Dr. Thomas Buss. Alle Rechte vorbehalten · Made in the Lab: <a href="https://www.greenlabz-studio.de/">Green Labz Studio</a>.</p>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+
+<!-- Floating Back to Top -->
+<button id="back-to-top-button" type="button" aria-label="Zurück zum Seitenanfang" class="back-to-top-button" title="Zurück zum Start">
+    <span class="material-symbols-outlined">north</span>
+</button>
+
+<!-- Cookie-Banner -->
+<div id="cookie-banner" class="fixed inset-x-0 bottom-0 z-[120] hidden px-4 pb-4 sm:px-6 sm:pb-6">
+    <div class="mx-auto max-w-5xl rounded-[28px] border border-slate-200 bg-white/95 shadow-2xl backdrop-blur-xl">
+        <div class="flex flex-col gap-5 px-5 py-5 sm:px-7 sm:py-6 lg:flex-row lg:items-end lg:justify-between">
+            <div class="max-w-3xl">
+                <p class="mb-2 text-xs font-bold uppercase tracking-[0.24em] text-primary">Cookie-Hinweis</p>
+                <h3 class="text-xl sm:text-2xl font-headline font-extrabold text-on-surface leading-tight">Diese Website verwendet Cookies und externe Dienste.</h3>
+                <p class="mt-3 text-sm sm:text-base leading-relaxed text-secondary">Wir nutzen technisch notwendige Funktionen sowie eingebundene Inhalte von Drittanbietern, zum Beispiel Google Maps, Google Fonts, Google Forms und den Terminkalender. Mehr dazu finden Sie in unserer <a href="Datenschutz.html" class="font-bold text-primary underline underline-offset-4 decoration-2">Datenschutzerklärung</a>.</p>
+            </div>
+            <div class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
+                <button type="button" id="cookie-accept-necessary" class="inline-flex items-center justify-center rounded-full border border-slate-300 px-5 py-3 text-sm font-headline font-bold text-slate-700 hover:bg-slate-50 transition-colors">Nur notwendige</button>
+                <button type="button" id="cookie-accept-all" class="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-headline font-bold text-white shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity">Alle akzeptieren</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

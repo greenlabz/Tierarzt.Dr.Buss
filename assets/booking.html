@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Termin buchen | Tierarztpraxis Dr. Buss</title>
+<meta name="description" content="Online Termin vorbereiten und anschließend im Google-Terminkalender der Tierarztpraxis Dr. Buss fortfahren."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<link rel="stylesheet" href="assets/css/booking-widget.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body">
+<section class="py-12 md:py-20 bg-surface-container-highest/30 min-h-screen">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-10">
+      <a href="index.html" class="inline-flex items-center gap-2 text-primary font-headline font-bold mb-6">
+        <span class="material-symbols-outlined">arrow_back</span> Zur Startseite
+      </a>
+      <span class="text-primary font-label font-bold uppercase tracking-widest text-sm">Online Termin</span>
+      <h1 class="text-4xl font-headline font-extrabold mt-2 mb-4">Termin online vorbereiten</h1>
+      <p class="text-secondary text-lg max-w-3xl">Wählen Sie bequem Datum und Uhrzeit vor und wechseln Sie dann mit Ihrer Auswahl in den Google-Terminkalender der Praxis.</p>
+    </div>
+    <div class="bk-booking">
+      <div class="bk" id="bookingWidget">
+        <div class="bk__shell">
+          <div class="bk__header">
+            <div class="bk__header-left">
+              <h1>Termin buchen</h1>
+              <p>Tierarztpraxis Dr. Buss · Möckmühl</p>
+            </div>
+            <div class="bk__header-paw"><img src="assets/images/logos/logo-transparent-cropped.png" alt="Logo Tierarztpraxis Dr. Buss" class="bk__header-logo"></div>
+          </div>
+
+          <div class="bk__steps">
+            <div class="bk__step active" id="si-1">
+              <div class="bk__step-num">1</div>
+              <span class="bk__step-label">Datum & Uhrzeit</span>
+            </div>
+            <div class="bk__step" id="si-2">
+              <div class="bk__step-num">2</div>
+              <span class="bk__step-label">Ihre Angaben</span>
+            </div>
+            <div class="bk__step" id="si-3">
+              <div class="bk__step-num">3</div>
+              <span class="bk__step-label">Bestätigung</span>
+            </div>
+          </div>
+
+          <div class="bk__body">
+            <div class="bk__panel active" id="panel-1">
+              <div class="bk__split">
+                <div class="cal">
+                  <div class="cal__nav">
+                    <div class="cal__title" id="calTitle"></div>
+                    <div class="cal__nav-btns">
+                      <button class="cal__btn" type="button" data-bk-action="prev-month" aria-label="Vorheriger Monat">
+                        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                      </button>
+                      <button class="cal__btn" type="button" data-bk-action="next-month" aria-label="Nächster Monat">
+                        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="cal__grid" id="calGrid"></div>
+
+                  <div class="cal__legend">
+                    <div class="cal__legend-item">
+                      <div class="cal__legend-dot" style="background:var(--g)"></div>Verfügbar
+                    </div>
+                    <div class="cal__legend-item">
+                      <div class="cal__legend-dot" style="background:var(--g-pale);border:1.5px solid var(--g-mid)"></div>Heute
+                    </div>
+                    <div class="cal__legend-item">
+                      <div class="cal__legend-dot" style="background:var(--border)"></div>Nicht verfügbar
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slots" id="slotsPanel">
+                  <div class="slots__placeholder" id="slotsPlaceholder">
+                    <div class="slots__placeholder-icon">📅</div>
+                    <p><strong>Datum wählen</strong><br>Klicken Sie auf einen grünen Tag, um die verfügbaren Zeiten zu sehen.</p>
+                  </div>
+                  <div id="slotsContent" style="display:none;"></div>
+                </div>
+              </div>
+
+              <div class="bk__actions">
+                <button class="btn-primary" id="btnStep2" type="button" data-bk-action="step-2" disabled>
+                  Weiter zu Ihren Angaben
+                  <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                </button>
+              </div>
+
+              
+              <div class="hotline">
+                <div class="hotline__icon">
+                  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                </div>
+                <div class="hotline__content">
+                  <div class="hotline__title">Kein Termin frei?</div>
+                  <p class="hotline__text">
+                    Rufen Sie uns direkt an unter
+                    <a href="tel:+4962983567">06298 3567</a>
+                    – wir finden eine Lösung.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bk__panel" id="panel-2">
+              <div class="form-header">
+                <h2>Ihre Angaben</h2>
+                <p>Fast geschafft – bitte tragen Sie Ihre Kontaktdaten ein.</p>
+              </div>
+
+              <div class="appt-pill" id="apptPill">
+                <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                <span id="pillDate">–</span>
+                <span class="appt-pill__sep">·</span>
+                <span id="pillTime">–</span>
+              </div>
+
+              
+<div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="fName">Vorname <span class="form-req">*</span></label>
+                  <input class="form-input" type="text" id="fName" placeholder="Max" autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="fLastname">Nachname <span class="form-req">*</span></label>
+                  <input class="form-input" type="text" id="fLastname" placeholder="Mustermann" autocomplete="family-name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="fEmail">E-Mail-Adresse <span class="form-req">*</span></label>
+                  <input class="form-input" type="email" id="fEmail" placeholder="ihre@email.de" autocomplete="email">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="fPhone">Telefonnummer <span class="form-req">*</span></label>
+                  <input class="form-input" type="tel" id="fPhone" placeholder="06298 3567" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="fPetName">Tiername <span class="form-req">*</span></label>
+                  <input class="form-input" type="text" id="fPetName" placeholder="z. B. Bruno">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="fPetType">Tierart <span class="form-req">*</span></label>
+                  <input class="form-input" type="text" id="fPetType" placeholder="z. B. Hund, Katze">
+                </div>
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="fReason">Grund des Termins <span class="form-req">*</span></label>
+                  <textarea class="form-input" id="fReason" placeholder="z. B. Impfung, Kontrolle, Lahmheit"></textarea>
+                </div>
+              </div>
+
+              <p class="bk__hint">Diese Angaben werden hier für die Vorauswahl mitgeführt. Die eigentliche Buchung läuft weiterhin über Ihren Google-Terminplan.</p>
+
+              <div class="bk__actions">
+                <button class="btn-back" type="button" data-bk-action="step-1">
+                  <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                  Zurück
+                </button>
+                <button class="btn-primary" type="button" data-bk-action="step-3">
+                  Zur Übersicht
+                  <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="bk__panel" id="panel-3">
+              <div class="form-header">
+                <h2>Alles korrekt?</h2>
+                <p>Bitte prüfen Sie Ihre Auswahl und öffnen Sie danach den Google-Kalender.</p>
+              </div>
+
+              <div class="confirm-grid">
+                <div class="confirm-card">
+                  <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                  <div>
+                    <div class="confirm-card__label">Datum</div>
+                    <div class="confirm-card__val" id="cDate">–</div>
+                  </div>
+                </div>
+                <div class="confirm-card">
+                  <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm.01 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                  <div>
+                    <div class="confirm-card__label">Uhrzeit</div>
+                    <div class="confirm-card__val" id="cTime">–</div>
+                  </div>
+                </div>
+                <div class="confirm-card">
+                  <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                  <div>
+                    <div class="confirm-card__label">Patient</div>
+                    <div class="confirm-card__val" id="cName">–</div>
+                  </div>
+                </div>
+                <div class="confirm-card">
+                  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                  <div>
+                    <div class="confirm-card__label">Telefon</div>
+                    <div class="confirm-card__val" id="cPhone">–</div>
+                  </div>
+                </div>
+                <div class="confirm-card">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 4.24 2 7s4.48 5 10 5 10-2.24 10-5-4.48-5-10-5zm0 8c-4.97 0-8-.99-8-3s3.03-3 8-3 8 .99 8 3-3.03 3-8 3zm-7 2c-1.66 0-3 1.34-3 3v2h10.26c-.79-.84-1.26-1.95-1.26-3.17V12H5zm12 0c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm2.65 7.35-1.41 1.41L17 19.41l-1.24 1.24-1.41-1.41L15.59 18l-1.24-1.24 1.41-1.41L17 16.59l1.24-1.24 1.41 1.41L18.41 18l1.24 1.35z"/></svg>
+                  <div>
+                    <div class="confirm-card__label">Tiername</div>
+                    <div class="confirm-card__val" id="cPetName">–</div>
+                  </div>
+                </div>
+                <div class="confirm-card">
+                  <svg viewBox="0 0 24 24"><path d="M12 2c-4.97 0-9 2.69-9 6 0 2.03 1.51 3.83 3.82 4.91L8 22l2.26-4.52c.57.08 1.15.12 1.74.12 4.97 0 9-2.69 9-6s-4.03-6-9-6z"/></svg>
+                  <div>
+                    <div class="confirm-card__label">Tierart</div>
+                    <div class="confirm-card__val" id="cPetType">–</div>
+                  </div>
+                </div>
+                <div class="confirm-card confirm-card--full">
+                  <svg viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 4h16v2H4zm0 4h10v2H4zm0 4h10v2H4z"/></svg>
+                  <div>
+                    <div class="confirm-card__label">Grund des Termins</div>
+                    <div class="confirm-card__val" id="cReason">–</div>
+                  </div>
+                </div>
+                <div class="confirm-card confirm-card--full">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  <div>
+                    <div class="confirm-card__label">Praxis</div>
+                    <div class="confirm-card__val">Tierarztpraxis Dr. Buss · Ruchsener Str. 12, 74219 Möckmühl</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="confirm-notice">
+                ℹ️ Mit dem Klick auf <strong>„Im Google-Kalender fortfahren“</strong> wird Ihr ausgewähltes Datum im Google-Terminkalender geöffnet.
+                Die endgültige Terminbestätigung erfolgt anschließend direkt bei Google. Damit Google/Sheet dieselben Daten speichern, müssen die Felder dort ebenfalls im Google-Buchungsformular hinterlegt sein.
+              </div>
+
+              <button class="btn-book" type="button" data-bk-action="confirm">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Im Google-Kalender fortfahren
+              </button>
+
+              <div class="bk__actions" style="margin-top: 12px;">
+                <button class="btn-back" type="button" data-bk-action="step-2-back">
+                  <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                  Zurück
+                </button>
+              </div>
+            </div>
+
+            <div class="bk__panel" id="panel-4">
+              <div class="success">
+                <div class="success__ring">
+                  <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                </div>
+                <h2>Google-Kalender geöffnet</h2>
+                <p>Bitte schließen Sie die Terminbuchung jetzt im geöffneten Google-Fenster ab. Ihre Vorauswahl wurde übernommen.</p>
+                <div class="success__appt" id="successAppt">–</div>
+                <div class="success__footer">
+                  Fragen? <a href="tel:+4962983567">06298 3567</a> &nbsp;·&nbsp;
+                  <a href="mailto:info@tierarzt-moeckmuehl.de">info@tierarzt-moeckmuehl.de</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/booking-widget.js"></script>
+</body>
+</html>

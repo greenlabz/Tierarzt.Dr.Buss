@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Notfall | Tierarztpraxis Dr. Buss</title>
+<link rel="stylesheet" href="assets/css/tailwind.min.css"/>
+<link rel="stylesheet" href="assets/css/fonts.css"/>
+<script type="application/json" id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#cfdaf2",
+              "on-secondary-fixed-variant": "#3c475a",
+              "surface-container-high": "#dee8ff",
+              "on-tertiary": "#ffffff",
+              "outline": "#6e7a6e",
+              "on-primary": "#ffffff",
+              "surface-bright": "#f9f9ff",
+              "on-primary-container": "#f6fff3",
+              "on-primary-fixed": "#00210b",
+              "surface-tint": "#006d34",
+              "surface-variant": "#d8e3fb",
+              "surface-container": "#e7eeff",
+              "on-primary-fixed-variant": "#005226",
+              "secondary": "#545f73",
+              "surface-container-highest": "#d8e3fb",
+              "primary-container": "#008742",
+              "inverse-primary": "#66de88",
+              "on-tertiary-container": "#fffbff",
+              "tertiary-container": "#e61a0e",
+              "on-secondary-container": "#586377",
+              "on-tertiary-fixed": "#410000",
+              "outline-variant": "#bdcabb",
+              "primary-fixed": "#82fba2",
+              "surface": "#f9f9ff",
+              "tertiary-fixed": "#ffdad4",
+              "on-secondary": "#ffffff",
+              "error": "#ba1a1a",
+              "secondary-fixed": "#d8e3fb",
+              "inverse-on-surface": "#ecf1ff",
+              "primary": "#006b33",
+              "primary-fixed-dim": "#66de88",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#bc0000",
+              "on-error-container": "#93000a",
+              "secondary-container": "#d5e0f8",
+              "inverse-surface": "#263143",
+              "on-secondary-fixed": "#111c2d",
+              "on-background": "#111c2d",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#930000",
+              "on-surface": "#111c2d",
+              "tertiary-fixed-dim": "#ffb4a8",
+              "surface-container-low": "#f0f3ff",
+              "on-error": "#ffffff",
+              "background": "#f9f9ff",
+              "on-surface-variant": "#3e4a3e",
+              "secondary-fixed-dim": "#bcc7de"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Public Sans"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<!-- Styles: siehe assets/css/style.css -->
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation -->
+<nav class="fixed relative top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-4 py-1.5 md:px-6 md:py-3 max-w-7xl mx-auto">
+<a class="flex items-center gap-2 sm:gap-3 shrink-0 min-w-0" href="index.html">
+<img alt="Tierarztpraxis Dr. Buss Logo" class="h-9 sm:h-10 md:h-14 w-auto bg-transparent object-contain shrink-0" src="assets/images/logos/logo-transparent-cropped.png"/>
+<span class="text-[0.72rem] sm:text-sm md:text-xl font-black text-green-900 dark:text-green-100 font-headline tracking-tight leading-tight whitespace-nowrap">Tierarztpraxis Dr. Buss</span>
+</a>
+<div class="hidden md:flex items-center space-gap-8 gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-green-800 font-headline font-bold transition-all duration-300" href="leistungen.html">Leistungen</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-green-800 font-headline font-bold transition-all duration-300" href="index.html#kontakt-formular">Kontakt</a>
+<a class="text-green-700 dark:text-green-300 border-b-2 border-green-700 font-headline font-bold transition-all duration-300" href="notfall.html">Notfall</a>
+</div>
+<div class="hidden md:flex items-center gap-4">
+<a href="index.html#termine" class="bg-primary text-on-primary px-6 py-2 rounded-full font-headline font-bold hover:opacity-90 transition-all duration-300 scale-95 active:scale-90 shadow-sm text-center">
+    Termin anfragen
+</a>
+</div>
+<button class="md:hidden p-1.5 text-primary shrink-0" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Menü öffnen">
+<span class="material-symbols-outlined" data-menu-icon>menu</span>
+</button>
+
+</div>
+
+<div id="mobile-menu" data-mobile-menu class="mobile-menu-panel hidden md:hidden border-t border-slate-200/70 bg-white/95 backdrop-blur-xl shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-2">
+    <a class="mobile-menu-link" href="index.html">Startseite</a>
+    <a class="mobile-menu-link" href="leistungen.html">Leistungen</a>
+    <a class="mobile-menu-link" href="index.html#kontakt-formular">Kontakt</a>
+    <a class="mobile-menu-link mobile-menu-link--alert" href="notfall.html">Notfall</a>
+    <a class="mobile-menu-link mobile-menu-link--primary" href="index.html#termine">Termin anfragen</a>
+  </div>
+</div>
+
+</nav>
+<!-- Emergency Marquee -->
+<!-- Hero Section -->
+<header class="relative pt-16 pb-24 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1 rounded-sm bg-primary-fixed text-on-primary-fixed font-label text-xs font-bold tracking-widest uppercase mb-6">Soforthilfe</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-background tracking-tight leading-none mb-8">
+                    Notfall – Wann <br/><span class="text-primary italic">sofort</span> handeln?
+                </h1>
+<p class="text-xl text-secondary max-w-lg mb-8 leading-relaxed">
+                    Unter folgender Nummer erreichen Sie <strong class="text-on-surface">unter der Woche von 18:00 bis 08:00 Uhr</strong> sowie <strong class="text-on-surface">von Freitag 18:00 Uhr bis Montag 08:00 Uhr</strong> jederzeit einen Kollegen im Bereitschaftsdienst.
+                </p>
+<!-- CTA: Emergency Number -->
+<div class="group relative inline-block w-full sm:w-auto">
+<a class="flex items-center justify-between gap-6 bg-gradient-to-r from-primary to-primary-container text-on-primary p-6 md:p-8 rounded-xl shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-1" href="tel:01805843736">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+</div>
+<div>
+<span class="block text-sm font-label uppercase tracking-widest opacity-80 mb-1">Bereitschaftsdienst</span>
+<span class="text-2xl md:text-4xl font-headline font-black">01805 / 843736</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-3xl opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+</div>
+<p class="text-sm text-secondary mt-4 italic">Tipp: Am Smartphone klicken, um direkt anzurufen.</p>
+</div>
+<div class="relative hidden lg:block">
+<div class="absolute -inset-4 bg-surface-container-high rounded-full blur-3xl opacity-50"></div>
+<img alt="Glowing red emergency siren light" class="relative z-10 w-full h-[600px] object-cover rounded-3xl shadow-2xl brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6rqLNHmgFYLTNPAzd-4Qunj3EvrLSTGUY_u0WbGgVBMZB5KJ4JWrhgOOZEwbcAalv9cI9BMoq-PSzh7wnNNqj8SCmuG5BXnfvrbfhAUCyphcHWqwzlpDukGjmVkBUPeB787Hi-UO8JEWvBP7bLgpuOPkKVCCryy9ia09qKygIxAzIbxFdV55wWE2Yzu-JwlYm5jzWNrY1Pi8HwjQFGgAmuA98Dz9WjgTDTqWlZUEknh3lThWfhW2bhKORu9ZdDivGXfFa8r0yeYU"/>
+</div>
+</div>
+</header>
+<!-- Medical Assessment Section -->
+<section id="was-ist-ein-notfall" class="py-24 px-6 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center max-w-3xl mx-auto">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight mb-4">Ersteinschätzung</h2>
+<p class="text-secondary">Bitte prüfen Sie die Symptome Ihres Tieres. Im Zweifelsfall rufen Sie uns immer direkt an – wir helfen Ihnen bei der Einschätzung.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Real Emergency -->
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border-l-8 border-tertiary">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-tertiary text-4xl">emergency</span>
+<h3 class="text-2xl font-headline font-bold">Das ist ein echter Notfall</h3>
+</div>
+<ul class="grid grid-cols-1 gap-y-4">
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Atemnot</strong> (starkes Hecheln, Röcheln, blaues Zahnfleisch/Zunge)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Bewusstlosigkeit, Kollaps, Krampfanfälle</strong></span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Starke Blutungen</strong> oder tiefe/klaffende Wunden</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Schwerer Unfall/Trauma</strong> (Autounfall, Sturz, Bissverletzung)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Starke Schmerzen</strong> mit deutlicher Verschlechterung</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Verdacht auf Vergiftung</strong> (Rattengift, Schokolade etc.)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Wiederholtes Erbrechen</strong> oder Erbrechen mit Blut</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Aufgeblähter Bauch &amp; Würgen</strong> ohne Erbrechen (Magendrehung)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Kein Harnabsatz möglich</strong> (v.a. Kater: häufiges Pressen)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Akute Augenverletzung</strong> oder stark schmerzhaftes Auge</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-tertiary mt-1 font-bold">•</span>
+<span class="text-on-surface"><strong>Geburtsprobleme</strong> (Pressen ohne Fortschritt)</span>
+</li>
+</ul>
+</div>
+<!-- Not an Emergency -->
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border-l-8 border-primary">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-4xl">check_circle</span>
+<h3 class="text-2xl font-headline font-bold">Meistens kein Notfall</h3>
+</div>
+<ul class="grid grid-cols-1 gap-y-4">
+<li class="flex items-start gap-3">
+<span class="text-primary mt-1 font-bold">•</span>
+<span class="text-on-surface">Leichter Durchfall – Tier ist fit, frisst und trinkt</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-primary mt-1 font-bold">•</span>
+<span class="text-on-surface">Leichter Husten/Niesen ohne Atemnot</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-primary mt-1 font-bold">•</span>
+<span class="text-on-surface">Lahmheit, die schon länger besteht und nicht akut schlimmer wird</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-primary mt-1 font-bold">•</span>
+<span class="text-on-surface">Zecken/Parasiten, Impfungen, Routine-Kontrollen</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-primary mt-1 font-bold">•</span>
+<span class="text-on-surface">Einmaliges Erbrechen – Tier wirkt ansonsten munter</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-primary mt-1 font-bold">•</span>
+<span class="text-on-surface">Juckreiz, Hautprobleme oder Ohrprobleme (seit Tagen/Wochen)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-primary mt-1 font-bold">•</span>
+<span class="text-on-surface">Kleinere Wunden ohne starke Blutung</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-primary mt-1 font-bold">•</span>
+<span class="text-on-surface">Krallen schneiden, Futterberatung</span>
+</li>
+</ul>
+<div class="mt-12 bg-surface-container-low rounded-lg p-4 text-sm text-secondary border border-outline-variant/30">
+<p><strong>Wichtig:</strong> Wird Ihr Tier plötzlich sehr apathisch, bekommt Atemnot, blutet stark oder kann nicht urinieren, wird aus „kein Notfall“ schnell ein Notfall – dann bitte sofort melden.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Clinic Locations -->
+<section class="py-24 px-6 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight mb-4">Notfall-Kliniken</h2>
+<p class="text-secondary">Außerhalb unserer Sprechzeiten stehen Ihnen in dringenden Notfällen rund um die Uhr (24h / 365 Tage) die folgenden Kliniken zur Verfügung.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Clinic 1: Ludwigsburg -->
+<div class="group relative bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-xl">
+<div class="h-64 overflow-hidden">
+<img alt="AniCura Klinik Ludwigsburg" class="w-full h-full group-hover:scale-105 transition-transform duration-700 p-12 bg-white object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ug52KeiJbpKRsRhgwJDqnXJlPp2cRgaVba6fsElbN-IuCM331iAV5IUmKLD2kOaVA2beUxBDeh5g-GBM-EKyPwoiEV0lk7FPZhoepwLHWDFAW3N-XkyY6tKERCz9k_06aj2JUFXzdu7aWJACrjElkyV5lkFJfVgIutpfZHGU4MHMDl6Hxv2NagVKVxFHbCwGTO16SHielUZuUu8UOTFNPoo32h9aYG--f3pcyhxvFMiYNQytZV7cu7gpzJpjbJ-VZ3xH8-FERjXcg"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h4 class="text-2xl font-headline font-bold mb-1">AniCura Klinik Ludwigsburg</h4>
+<p class="text-secondary">Spezialisiert auf Akutfälle</p>
+</div>
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed text-xs font-bold rounded-sm">24H OFFEN</span>
+</div>
+<p class="text-on-surface-variant mb-8 flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-1">location_on</span>
+                            Karl-Heinrich-Käferle-Straße 2<br/>71640 Ludwigsburg
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex items-center justify-center gap-2 flex-1 py-4 bg-white border-2 border-outline-variant rounded-full font-headline font-bold hover:bg-surface-container-high transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=AniCura+Klinik+Ludwigsburg+Karl-Heinrich-Kaeferle-Strasse+2+71640+Ludwigsburg" target="_blank">
+<span class="material-symbols-outlined">map</span>
+                                In Google Maps öffnen
+                            </a>
+</div>
+</div>
+</div>
+<!-- Clinic 2: Heilbronn -->
+<div class="group relative bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-xl">
+<div class="h-64 overflow-hidden">
+<img alt="AniCura Klinik Heilbronn" class="w-full h-full group-hover:scale-105 transition-transform duration-700 p-12 bg-white object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ug52KeiJbpKRsRhgwJDqnXJlPp2cRgaVba6fsElbN-IuCM331iAV5IUmKLD2kOaVA2beUxBDeh5g-GBM-EKyPwoiEV0lk7FPZhoepwLHWDFAW3N-XkyY6tKERCz9k_06aj2JUFXzdu7aWJACrjElkyV5lkFJfVgIutpfZHGU4MHMDl6Hxv2NagVKVxFHbCwGTO16SHielUZuUu8UOTFNPoo32h9aYG--f3pcyhxvFMiYNQytZV7cu7gpzJpjbJ-VZ3xH8-FERjXcg"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h4 class="text-2xl font-headline font-bold mb-1">AniCura Klinik Heilbronn</h4>
+<p class="text-secondary">Erfahrene Kleintierspezialisten</p>
+</div>
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-xs font-bold rounded-sm">BIS 22:00 UHR</span>
+</div>
+<p class="text-on-surface-variant mb-8 flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-1">location_on</span>
+                            Ferdinand-Braun-Straße 2<br/>74074 Heilbronn
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex items-center justify-center gap-2 flex-1 py-4 bg-white border-2 border-outline-variant rounded-full font-headline font-bold hover:bg-surface-container-high transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=AniCura+Klinik+Heilbronn+Ferdinand-Braun-Strasse+2+74074+Heilbronn" target="_blank">
+<span class="material-symbols-outlined">map</span>
+                                In Google Maps öffnen
+                            </a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 bg-surface-container-low border border-outline-variant/30 rounded-xl p-6 text-center text-sm text-secondary">
+                Bitte fahren Sie diese Kliniken <strong>ausschließlich bei wirklichen Notfällen</strong> direkt an; eine vorherige telefonische Anmeldung ist <strong>nicht erforderlich</strong>.
+            </div>
+</div>
+</section>
+<!-- Preparation Checklist -->
+<section class="py-24 px-6 border-t border-outline-variant/10">
+<div class="max-w-4xl mx-auto bg-primary text-on-primary p-8 md:p-16 rounded-3xl relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl">inventory</span>
+</div>
+<h3 class="text-3xl font-headline font-extrabold mb-8">Vor der Abfahrt vorbereiten</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+<div class="space-y-4">
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">1</div>
+<p class="font-body">Heimtierausweis / Impfpass griffbereit halten.</p>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">2</div>
+<p class="font-body">Aktuelle Medikamentenliste notieren.</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">3</div>
+<p class="font-body">Tier sicher in einer Transportbox sichern.</p>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">4</div>
+<p class="font-body">Telefonische Anmeldung nicht nötig.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="site-footer bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="site-footer__inner max-w-7xl mx-auto px-6 sm:px-8 py-12">
+<div class="site-footer__grid">
+<div class="site-footer__card site-footer__brand">
+    <img alt="Tierarztpraxis Dr. Buss Logo" class="site-footer__logo" src="assets/images/logos/logo-transparent-cropped.png"/>
+    <div class="site-footer__brand-title">Tierarztpraxis Dr. Buss</div>
+    <p class="site-footer__brand-copy">
+        Ihre Praxis für Kleintiere im Herzen von Möckmühl. Freundlich, persönlich und mit Zeit für Sie und Ihr Tier.
+    </p>
+</div>
+<div class="site-footer__card">
+<h4 class="site-footer__headline">Kontakt &amp; Standort</h4>
+<ul class="site-footer__list">
+<li>Ruchsener Straße 12</li>
+<li>74219 Möckmühl</li>
+<li><a class="site-footer__link site-footer__link--strong" href="tel:+4962983567">Tel: 06298 3567</a></li>
+<li><a class="site-footer__link" href="mailto:info@tierarztpraxis-möckmühl.de">E-Mail: info@tierarztpraxis-möckmühl.de</a></li>
+<li><a class="site-footer__link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Ruchsener+Stra%C3%9Fe+12%2C+74219+M%C3%B6ckm%C3%BChl" target="_blank">Route in Google Maps</a></li>
+</ul>
+</div>
+<div class="site-footer__card">
+<h4 class="site-footer__headline">Öffnungszeiten</h4>
+<ul class="site-footer__hours">
+<li><span>Montag</span><span>10:30 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Dienstag</span><span>10:30 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Mittwoch</span><span>10:30 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Donnerstag</span><span>11:00 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Freitag</span><span>11:00 – 12:00 · 16:30 – 18:30</span></li>
+</ul>
+<p class="site-footer__note">Termine nur nach Vereinbarung.</p>
+</div>
+<div class="site-footer__card">
+<h4 class="site-footer__headline">Schnellzugriff</h4>
+<ul class="site-footer__list">
+<li><a class="site-footer__link" href="index.html#termine">Termin vereinbaren</a></li>
+<li><a class="site-footer__link" href="index.html#kontakt-formular">Kontaktformular</a></li>
+<li><a class="site-footer__link" href="notfall.html">Notdienst</a></li>
+<li><a class="site-footer__link" href="leistungen.html">Leistungen</a></li>
+<li><a class="site-footer__link" href="ratgeber.html">Ratgeber</a></li>
+<li><a class="site-footer__link" href="Impressum.html">Impressum</a></li>
+<li><a class="site-footer__link" href="Datenschutz.html">Datenschutz</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="site-footer__bottom">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 py-6 text-center">
+<p class="site-footer__copyright">© 2026 Tierarztpraxis Dr. Thomas Buss. Alle Rechte vorbehalten · Made in the Lab: <a class="text-primary" href="https://www.greenlabz-studio.de/">GreenLabz Studio</a>.</p>
+</div>
+</div>
+</footer>
+<!-- Lokales JavaScript -->
+<script src="assets/js/main.js"></script>
+
+
+<!-- Floating Back to Top -->
+<button id="back-to-top-button" type="button" aria-label="Zurück zum Seitenanfang" class="back-to-top-button" title="Zurück zum Start">
+    <span class="material-symbols-outlined">north</span>
+</button>
+
+<!-- Cookie-Banner -->
+<div id="cookie-banner" class="fixed inset-x-0 bottom-0 z-[120] hidden px-4 pb-4 sm:px-6 sm:pb-6">
+    <div class="mx-auto max-w-5xl rounded-[28px] border border-slate-200 bg-white/95 shadow-2xl backdrop-blur-xl">
+        <div class="flex flex-col gap-5 px-5 py-5 sm:px-7 sm:py-6 lg:flex-row lg:items-end lg:justify-between">
+            <div class="max-w-3xl">
+                <p class="mb-2 text-xs font-bold uppercase tracking-[0.24em] text-primary">Cookie-Hinweis</p>
+                <h3 class="text-xl sm:text-2xl font-headline font-extrabold text-on-surface leading-tight">Diese Website verwendet Cookies und externe Dienste.</h3>
+                <p class="mt-3 text-sm sm:text-base leading-relaxed text-secondary">Wir nutzen technisch notwendige Funktionen sowie eingebundene Inhalte von Drittanbietern, zum Beispiel Google Maps, Google Fonts, Google Forms und den Terminkalender. Mehr dazu finden Sie in unserer <a href="Datenschutz.html" class="font-bold text-primary underline underline-offset-4 decoration-2">Datenschutzerklärung</a>.</p>
+            </div>
+            <div class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
+                <button type="button" id="cookie-accept-necessary" class="inline-flex items-center justify-center rounded-full border border-slate-300 px-5 py-3 text-sm font-headline font-bold text-slate-700 hover:bg-slate-50 transition-colors">Nur notwendige</button>
+                <button type="button" id="cookie-accept-all" class="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-headline font-bold text-white shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity">Alle akzeptieren</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

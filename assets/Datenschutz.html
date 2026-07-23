@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Datenschutzerklärung | Tierarztpraxis Dr. Buss</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Public+Sans:wght@300;400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ba1a1a",
+              "on-secondary-fixed": "#111c2d",
+              "inverse-on-surface": "#ecf1ff",
+              "inverse-primary": "#66de88",
+              "surface-tint": "#006d34",
+              "surface-container-high": "#dee8ff",
+              "primary-container": "#008742",
+              "on-primary-fixed-variant": "#005226",
+              "on-surface-variant": "#3e4a3e",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#d8e3fb",
+              "primary": "#006b33",
+              "on-tertiary-container": "#fffbff",
+              "surface-dim": "#cfdaf2",
+              "primary-fixed-dim": "#66de88",
+              "on-primary-fixed": "#00210b",
+              "on-error-container": "#93000a",
+              "secondary": "#545f73",
+              "on-tertiary": "#ffffff",
+              "on-background": "#111c2d",
+              "inverse-surface": "#263143",
+              "secondary-fixed-dim": "#bcc7de",
+              "error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#ffb4a8",
+              "surface-bright": "#f9f9ff",
+              "surface-container-highest": "#d8e3fb",
+              "surface": "#f9f9ff",
+              "on-surface": "#111c2d",
+              "on-tertiary-fixed-variant": "#930000",
+              "on-secondary": "#ffffff",
+              "background": "#f9f9ff",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#e7eeff",
+              "on-primary-container": "#f6fff3",
+              "surface-container-low": "#f0f3ff",
+              "tertiary": "#bc0000",
+              "secondary-container": "#d5e0f8",
+              "surface-variant": "#d8e3fb",
+              "on-error": "#ffffff",
+              "tertiary-fixed": "#ffdad4",
+              "primary-fixed": "#82fba2",
+              "outline-variant": "#bdcabb",
+              "outline": "#6e7a6e",
+              "on-secondary-fixed-variant": "#3c475a",
+              "tertiary-container": "#e61a0e",
+              "on-tertiary-fixed": "#410000",
+              "on-secondary-container": "#586377"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Public Sans"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<!-- Styles: siehe assets/css/style.css -->
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- TopNavBar -->
+<nav class="fixed relative top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-1.5 md:px-6 md:py-3">
+<a class="flex items-center gap-2 sm:gap-3 shrink-0 min-w-0" href="index.html">
+<img alt="Logo Tierarztpraxis Dr. Buss" class="h-9 sm:h-10 md:h-14 w-auto bg-transparent shrink-0" src="assets/images/logos/logo-transparent-cropped.png"/>
+<span class="text-[0.72rem] sm:text-sm md:text-xl font-black text-green-900 dark:text-green-100 font-headline tracking-tight leading-tight whitespace-nowrap">Tierarztpraxis Dr. Buss</span>
+</a>
+<div class="hidden md:flex items-center gap-8 font-headline font-bold">
+<a class="text-slate-600 dark:text-slate-400 hover:text-green-800 transition-all duration-300" href="leistungen.html">Leistungen</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-green-800 transition-all duration-300" href="index.html#kontakt">Kontakt</a>
+<div class="hidden md:flex items-center gap-4">
+<a href="notfall.html" class="bg-surface-container-lowest text-tertiary border border-tertiary px-6 py-2 rounded-full font-headline font-bold scale-95 active:scale-90 transition-all">Notfall</a>
+<a href="index.html#termine" class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-headline font-bold scale-95 active:scale-90 transition-all text-center">Termin anfragen</a>
+</div>
+</div>
+<button class="md:hidden p-1.5 text-primary shrink-0" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Menü öffnen">
+<span class="material-symbols-outlined" data-menu-icon>menu</span>
+</button>
+
+</div>
+
+<div id="mobile-menu" data-mobile-menu class="mobile-menu-panel hidden md:hidden border-t border-slate-200/70 bg-white/95 backdrop-blur-xl shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-2">
+    <a class="mobile-menu-link" href="index.html">Startseite</a>
+    <a class="mobile-menu-link" href="leistungen.html">Leistungen</a>
+    <a class="mobile-menu-link" href="index.html#kontakt-formular">Kontakt</a>
+    <a class="mobile-menu-link mobile-menu-link--alert" href="notfall.html">Notfall</a>
+    <a class="mobile-menu-link mobile-menu-link--primary" href="index.html#termine">Termin anfragen</a>
+  </div>
+</div>
+
+</nav>
+
+<!-- Header Section -->
+<header class="pt-32 pb-16 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="inline-block bg-primary-fixed px-4 py-1 rounded-sm mb-4">
+<span class="text-on-primary-fixed text-xs font-label font-bold tracking-widest uppercase">Rechtliches</span>
+</div>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold text-on-surface tracking-tighter leading-tight max-w-3xl">
+                Datenschutzerklärung
+            </h1>
+<p class="mt-6 text-lg text-secondary max-w-2xl leading-relaxed">
+                Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften.
+            </p>
+</div>
+</header>
+
+<!-- Main Content Grid -->
+<main class="max-w-7xl mx-auto px-6 py-16 lg:grid lg:grid-cols-12 lg:gap-16">
+<!-- Sticky Sidebar Navigation -->
+<aside class="hidden lg:block lg:col-span-3">
+<div class="sticky top-32 space-y-2">
+<h3 class="font-headline font-bold text-sm text-primary uppercase tracking-widest mb-6 px-4">Inhaltsverzeichnis</h3>
+<nav class="flex flex-col border-l-2 border-surface-container">
+<a class="px-4 py-2 text-sm font-medium border-l-2 -ml-[2px] border-transparent hover:text-primary transition-colors text-secondary hover:border-primary" href="#einleitung">1. Einleitung</a>
+<a class="px-4 py-2 text-sm font-medium border-l-2 -ml-[2px] border-transparent hover:text-primary transition-colors text-secondary hover:border-primary" href="#verantwortlicher">2. Verantwortlicher</a>
+<a class="px-4 py-2 text-sm font-medium border-l-2 -ml-[2px] border-transparent hover:text-primary transition-colors text-secondary hover:border-primary" href="#erfassung">3. Datenerfassung</a>
+<a class="px-4 py-2 text-sm font-medium border-l-2 -ml-[2px] border-transparent hover:text-primary transition-colors text-secondary hover:border-primary" href="#weitergabe">4. Datenweitergabe</a>
+<a class="px-4 py-2 text-sm font-medium border-l-2 -ml-[2px] border-transparent hover:text-primary transition-colors text-secondary hover:border-primary" href="#cookies">5. Cookies</a>
+<a class="px-4 py-2 text-sm font-medium border-l-2 -ml-[2px] border-transparent hover:text-primary transition-colors text-secondary hover:border-primary" href="#analyse">6. Analyse-Tools</a>
+<a class="px-4 py-2 text-sm font-medium border-l-2 -ml-[2px] border-transparent hover:text-primary transition-colors text-secondary hover:border-primary" href="#rechte">7. Ihre Rechte</a>
+<a class="px-4 py-2 text-sm font-medium border-l-2 -ml-[2px] border-transparent hover:text-primary transition-colors text-secondary hover:border-primary" href="#widerspruch">8. Widerspruch</a>
+</nav>
+</div>
+</aside>
+
+<!-- Content Area -->
+<div class="lg:col-span-9 space-y-20">
+<!-- Section 1: Einleitung -->
+<section class="scroll-mt-32" id="einleitung">
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-6">1. Einleitung zum Datenschutz</h2>
+<div class="prose prose-slate max-w-none text-on-surface-variant leading-relaxed space-y-4">
+<p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis.</p>
+<p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+</div>
+</section>
+<!-- Section 2: Verantwortlicher -->
+<section class="scroll-mt-32" id="verantwortlicher">
+<div class="bg-surface-container-low rounded-xl p-8 md:p-12">
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-6">2. Verantwortlicher</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<p class="font-headline font-bold text-primary">Anschrift</p>
+<address class="not-italic text-on-surface-variant leading-relaxed text-on-surface">
+                                Dr. med. vet. Thomas Buss<br/>
+                                Ruchsener Str. 12<br/>
+                                74219 Möckmühl
+                            </address>
+</div>
+<div class="space-y-4">
+<p class="font-headline font-bold text-primary">Kontakt</p>
+<p class="text-on-surface-variant leading-relaxed text-on-surface">
+                                Tel: +49 (0) 6298 927230<br/>
+                                Email: <a class="text-primary hover:underline transition-all" href="mailto:praxis@tierarztpraxis-moeckmuehl.de">praxis@tierarztpraxis-moeckmuehl.de</a>
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Erfassung -->
+<section class="scroll-mt-32" id="erfassung">
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-6">3. Erfassung und Speicherung personenbezogener Daten</h2>
+<div class="space-y-8">
+<div class="bg-surface-container-lowest border-l-4 border-primary p-6 rounded-r-lg">
+<h3 class="text-xl font-headline font-bold mb-3">Server-Log-Files</h3>
+<p class="text-on-surface-variant text-on-surface">Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Files, die Ihr Browser automatisch an uns übermittelt. Dies sind: Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage und IP-Adresse.</p>
+</div>
+<div class="bg-surface-container-lowest border-l-4 border-primary p-6 rounded-r-lg">
+<h3 class="text-xl font-headline font-bold mb-3">Kontaktformular</h3>
+<p class="text-on-surface-variant text-on-surface">Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p>
+</div>
+<div class="bg-surface-container-lowest border-l-4 border-primary p-6 rounded-r-lg">
+<h3 class="text-xl font-headline font-bold mb-3">Google Appointment Scheduling</h3>
+<p class="text-on-surface-variant text-on-surface">Zur Terminvereinbarung nutzen wir Google Appointment Scheduling. Dabei werden Daten an Google übertragen, um den Terminabgleich und die Bestätigung zu ermöglichen. Bitte beachten Sie die Datenschutzbestimmungen von Google.</p>
+</div>
+</div>
+</section>
+<!-- Section 4: Weitergabe -->
+<section class="scroll-mt-32" id="weitergabe">
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-6">4. Weitergabe von Daten</h2>
+<p class="text-on-surface-variant leading-relaxed text-on-surface">Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:</p>
+<ul class="mt-4 space-y-4 list-none text-on-surface">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span>Sie Ihre ausdrückliche Einwilligung dazu erteilt haben.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span>Die Weitergabe zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span>Eine gesetzliche Verpflichtung für die Weitergabe besteht.</span>
+</li>
+</ul>
+</section>
+<!-- Section 5: Cookies -->
+<section class="scroll-mt-32" id="cookies">
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-6">5. Cookies</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-surface-container-low p-6 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">cookie</span>
+<h3 class="text-xl font-headline font-bold mb-2">Was sind Cookies?</h3>
+<p class="text-sm text-on-surface-variant text-on-surface">Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">settings_suggest</span>
+<h3 class="text-xl font-headline font-bold mb-2">Verwaltung</h3>
+<p class="text-sm text-on-surface-variant text-on-surface">Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen.</p>
+</div>
+</div>
+</section>
+<!-- Section 6: Analyse -->
+<section class="scroll-mt-32" id="analyse">
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-6">6. Analyse-Tools</h2>
+<p class="text-on-surface-variant leading-relaxed text-on-surface">
+                    Die auf dieser Website verwendeten Analyse-Maßnahmen werden auf Grundlage des Art. 6 Abs. 1 S. 1 lit. f DSGVO durchgeführt. Mit den zum Einsatz kommenden Analyse-Maßnahmen wollen wir eine bedarfsgerechte Gestaltung und die fortlaufende Optimierung unserer Webseite sicherstellen.
+                </p>
+</section>
+<!-- Section 7: Rechte -->
+<section class="scroll-mt-32" id="rechte">
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-6">7. Betroffenenrechte</h2>
+<p class="text-on-surface-variant mb-6 text-on-surface">Sie haben das Recht:</p>
+<div class="grid md:grid-cols-2 gap-4">
+<div class="p-4 bg-white shadow-sm rounded-lg flex items-center gap-4 text-on-surface">
+<div class="h-10 w-10 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold">1</div>
+<span class="text-sm font-medium">Auskunft über gespeicherte Daten</span>
+</div>
+<div class="p-4 bg-white shadow-sm rounded-lg flex items-center gap-4 text-on-surface">
+<div class="h-10 w-10 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold">2</div>
+<span class="text-sm font-medium">Berichtigung unrichtiger Daten</span>
+</div>
+<div class="p-4 bg-white shadow-sm rounded-lg flex items-center gap-4 text-on-surface">
+<div class="h-10 w-10 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold">3</div>
+<span class="text-sm font-medium">Löschung Ihrer Daten</span>
+</div>
+<div class="p-4 bg-white shadow-sm rounded-lg flex items-center gap-4 text-on-surface">
+<div class="h-10 w-10 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold">4</div>
+<span class="text-sm font-medium">Datenübertragbarkeit</span>
+</div>
+</div></section>
+<!-- Section 8: Widerspruch -->
+<section class="scroll-mt-32 pb-20" id="widerspruch">
+<div class="bg-primary text-on-primary p-8 md:p-12 rounded-2xl shadow-xl relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-3xl font-headline font-bold mb-6">8. Widerspruchsrecht</h2>
+<p class="text-lg opacity-90 leading-relaxed mb-8">
+                            Sofern Ihre personenbezogenen Daten auf Grundlage von berechtigten Interessen gemäß Art. 6 Abs. 1 S. 1 lit. f DSGVO verarbeitet werden, haben Sie das Recht, gemäß Art. 21 DSGVO Widerspruch gegen die Verarbeitung einzulegen, soweit dafür Gründe vorliegen, die sich aus Ihrer besonderen Situation ergeben.
+                        </p>
+<a class="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-full font-headline font-bold hover:bg-opacity-90 transition-all shadow-lg" href="mailto:praxis@tierarztpraxis-moeckmuehl.de">
+                            Widerspruch einlegen
+                            <span class="material-symbols-outlined">send</span>
+</a>
+</div>
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary-container rounded-full opacity-20"></div>
+</div>
+</section>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="site-footer__inner max-w-7xl mx-auto px-6 sm:px-8 py-12">
+<div class="site-footer__grid">
+<div class="site-footer__card site-footer__brand">
+    <img alt="Tierarztpraxis Dr. Buss Logo" class="site-footer__logo" src="assets/images/logos/logo-transparent-cropped.png"/>
+    <div class="site-footer__brand-title">Tierarztpraxis Dr. Buss</div>
+    <p class="site-footer__brand-copy">
+        Ihre Praxis für Kleintiere im Herzen von Möckmühl. Freundlich, persönlich und mit Zeit für Sie und Ihr Tier.
+    </p>
+</div>
+<div class="site-footer__card">
+<h4 class="site-footer__headline">Kontakt &amp; Standort</h4>
+<ul class="site-footer__list">
+<li>Ruchsener Str. 12</li>
+<li>74219 Möckmühl</li>
+<li><a class="site-footer__link site-footer__link--strong" href="tel:+4962983567">Tel: 06298 3567</a></li>
+<li><a class="site-footer__link" href="mailto:info@tierarztpraxis-moeckmuehl.de">E-Mail: info@tierarztpraxis-moeckmuehl.de</a></li>
+<li><a class="site-footer__link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Ruchsener+Str.+12%2C+74219+M%C3%B6ckm%C3%BChl" target="_blank">Route in Google Maps</a></li>
+</ul>
+</div>
+<div class="site-footer__card">
+<h4 class="site-footer__headline">Öffnungszeiten</h4>
+<ul class="site-footer__hours">
+<li><span>Montag</span><span>10:30 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Dienstag</span><span>10:30 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Mittwoch</span><span>10:30 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Donnerstag</span><span>11:00 – 12:00 · 16:30 – 18:30</span></li>
+<li><span>Freitag</span><span>11:00 – 12:00 · 16:30 – 18:30</span></li>
+</ul>
+<p class="site-footer__note">Termine nur nach Vereinbarung.</p>
+</div>
+<div class="site-footer__card">
+<h4 class="site-footer__headline">Schnellzugriff</h4>
+<ul class="site-footer__list">
+<li><a class="site-footer__link" href="index.html#termine">Termin vereinbaren</a></li>
+<li><a class="site-footer__link" href="index.html#kontakt-formular">Kontaktformular</a></li>
+<li><a class="site-footer__link" href="notfall.html">Notdienst</a></li>
+<li><a class="site-footer__link" href="leistungen.html">Leistungen</a></li>
+<li><a class="site-footer__link" href="ratgeber.html">Ratgeber</a></li>
+<li><a class="site-footer__link" href="Impressum.html">Impressum</a></li>
+<li><a class="site-footer__link" href="Datenschutz.html">Datenschutz</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="site-footer__bottom">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 py-6 text-center">
+<p class="site-footer__copyright">© 2026 Tierarztpraxis Dr. Thomas Buss. Alle Rechte vorbehalten · Made in the Lab: <a href="https://www.greenlabz-studio.de/">Green Labz Studio</a>.</p>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+
+<!-- Floating Back to Top -->
+<button id="back-to-top-button" type="button" aria-label="Zurück zum Seitenanfang" class="back-to-top-button" title="Zurück zum Start">
+    <span class="material-symbols-outlined">north</span>
+</button>
+
+<!-- Cookie-Banner -->
+<div id="cookie-banner" class="fixed inset-x-0 bottom-0 z-[120] hidden px-4 pb-4 sm:px-6 sm:pb-6">
+    <div class="mx-auto max-w-5xl rounded-[28px] border border-slate-200 bg-white/95 shadow-2xl backdrop-blur-xl">
+        <div class="flex flex-col gap-5 px-5 py-5 sm:px-7 sm:py-6 lg:flex-row lg:items-end lg:justify-between">
+            <div class="max-w-3xl">
+                <p class="mb-2 text-xs font-bold uppercase tracking-[0.24em] text-primary">Cookie-Hinweis</p>
+                <h3 class="text-xl sm:text-2xl font-headline font-extrabold text-on-surface leading-tight">Diese Website verwendet Cookies und externe Dienste.</h3>
+                <p class="mt-3 text-sm sm:text-base leading-relaxed text-secondary">Wir nutzen technisch notwendige Funktionen sowie eingebundene Inhalte von Drittanbietern, zum Beispiel Google Maps, Google Fonts, Google Forms und den Terminkalender. Mehr dazu finden Sie in unserer <a href="Datenschutz.html" class="font-bold text-primary underline underline-offset-4 decoration-2">Datenschutzerklärung</a>.</p>
+            </div>
+            <div class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
+                <button type="button" id="cookie-accept-necessary" class="inline-flex items-center justify-center rounded-full border border-slate-300 px-5 py-3 text-sm font-headline font-bold text-slate-700 hover:bg-slate-50 transition-colors">Nur notwendige</button>
+                <button type="button" id="cookie-accept-all" class="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-headline font-bold text-white shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity">Alle akzeptieren</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
